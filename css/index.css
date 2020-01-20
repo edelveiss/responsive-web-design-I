@@ -1,3 +1,469 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+    max-width: 100%;
+}
+
+p {
+    line-height: 130%;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* Your code starts here! */
+
+body {
+    margin-left: 5%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 89%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+}
+
+.links {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    font-family: "system-ui";
+    letter-spacing: 0.05rem;
+    font-size: 120%;
+    width: 10%;
+    margin: 1.7%;
+    text-decoration: none;
+    color: gray;
+}
+
+.links a:hover {
+    color: #B91837;
+}
+
+header {
+    width: 89%;
+    height: 78vh;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div {
+    width: 40%;
+    text-align: center;
+}
+
+header div.img-header {
+    width: 30%;
+    margin-left: 17%;
+    vertical-align: middle;
+    margin-top: 1%;
+}
+
+header div.title-header {
+    vertical-align: middle;
+    margin-left: 3%;
+    font-size: 400%;
+}
+
+button {
+    width: 45%;
+    font-size: 1.3rem;
+    font-family: 'Titillium Web', sans-serif;
+    border: 0.1rem solid gray;
+    padding: 0.5rem 0.6rem;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #B91837;
+    color: white;
+}
+
+.img-code {
+    width: 89%;
+    margin-left: 1%;
+}
+
+.content1,
+.content2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 89%;
+    margin: 1%;
+}
+
+.content1 div {
+    width: 48.5%;
+}
+
+
+/* .content2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 89%;
+    margin: 1%;
+} */
+
+.content2 div,
+.content1 div {
+    padding-bottom: 2rem;
+}
+
+.content2 div {
+    width: 31.5%;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+.address {
+    width: 89%;
+    margin: 1%;
+    margin-top: 1.6rem;
+}
+
+address {
+    font-size: 1rem;
+}
+
+.footer div {
+    width: 89%;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 5%;
+}
+
+.line {
+    margin: 1%;
+    width: 89%;
+}
+
+
+/*  service style sheet  */
+
+.service-header {
+    height: 58vh;
+    /**/
+}
+
+.service-description div {
+    width: 100%;
+    margin: 1%;
+    text-align: left;
+}
+
+.service-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 89%;
+    margin: 1%;
+}
+
+.service-content div {
+    width: 48.5%;
+    border: 1px solid black;
+    background: #F4F3F4;
+    padding: 2%;
+    margin: 1.5% 0px;
+}
+
+.service-button {
+    padding: 7px 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 80%;
+}
+
+.service-button:hover {
+    background-color: #B91837;
+    color: white;
+}
+
+.facts {
+    width: 89%;
+    margin: 1%;
+    margin-top: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.facts div {
+    width: 48.5%;
+}
+
+.facts div ul {
+    padding: 1%;
+    text-indent: 1%;
+    list-style-type: square;
+    margin: 3%;
+    line-height: 30px;
+}
+
+.img-service {
+    width: 100%;
+    margin-left: 1%;
+}
+
+.services-header-img {
+    width: 100%;
+}
+
+
+/********************************/
+
+
+/*media for tablet*/
+
+@media (max-width: 800px) {
+    /*navigation*/
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .logo {
+        padding: 2% 0;
+    }
+    .links {
+        width: 80%;
+    }
+    .links a {
+        width: 10%;
+    }
+    header div {
+        display: flex;
+        flex-direction: column;
+    }
+    header .img-header {
+        display: none;
+    }
+    button {
+        width: 80%;
+    }
+    .line {
+        margin-bottom: 3%;
+        width: 89%;
+    }
+}
+
+
+/*media for mobil*/
+
+@media (max-width: 500px) {
+    .links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .links a {
+        width: 10rem;
+        border-bottom: 0.08rem solid grey;
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+    .links a:first-child {
+        border-top: 0.08rem solid grey;
+        padding-top: 0.5rem;
+    }
+    .content2 div,
+    .content1 div,
+    header div,
+    .service-content div,
+    .facts div {
+        width: 100%;
+    }
+    button {
+        width: 50%;
+    }
+    .footer p {
+        margin: 10% 0;
+    }
+}
