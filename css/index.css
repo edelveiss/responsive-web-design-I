@@ -90,7 +90,7 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    /* font-size: 100%; */
     font: inherit;
     vertical-align: baseline;
 }
@@ -154,10 +154,27 @@ p {
     line-height: 130%;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html,
 body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1rem;
 }
 
 h1,
@@ -166,8 +183,8 @@ h3,
 h4,
 h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -175,6 +192,17 @@ h5 {
 
 body {
     margin-left: 5%;
+}
+
+p {
+    font-size: 0.7rem;
+}
+
+
+/* assessability for blind people */
+
+.hidden {
+    display: none;
 }
 
 .container {
@@ -200,9 +228,10 @@ body {
 .links a {
     font-family: "system-ui";
     letter-spacing: 0.05rem;
-    font-size: 120%;
-    width: 10%;
-    margin: 1.7%;
+    font-size: 0.8rem;
+    width: 14%;
+    padding-left: 1%;
+    margin: 1.7% 1.2%;
     text-decoration: none;
     color: gray;
 }
@@ -213,7 +242,7 @@ body {
 
 header {
     width: 89%;
-    height: 78vh;
+    /* height: 78vh; */
 }
 
 .header-container {
@@ -235,18 +264,25 @@ header div.img-header {
     margin-top: 1%;
 }
 
-header div.title-header {
+
+/* header div.title-header { */
+
+.title-header {
     vertical-align: middle;
     margin-left: 3%;
-    font-size: 400%;
+    font-size: 2rem;
+}
+
+.title-header h1 {
+    font-size: 1.7rem;
 }
 
 button {
     width: 45%;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     font-family: 'Titillium Web', sans-serif;
     border: 0.1rem solid gray;
-    padding: 0.5rem 0.6rem;
+    padding: 0.1rem 0.6rem;
     background-color: white;
 }
 
@@ -274,16 +310,6 @@ button:hover {
     width: 48.5%;
 }
 
-
-/* .content2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 89%;
-    margin: 1%;
-} */
-
 .content2 div,
 .content1 div {
     padding-bottom: 2rem;
@@ -304,17 +330,19 @@ button:hover {
 }
 
 address {
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
-.footer div {
+
+/* .footer div {
     width: 89%;
     text-align: center;
 }
 
 .footer p {
     margin-bottom: 5%;
-}
+    font-size: 0.7rem;
+} */
 
 .line {
     margin: 1%;
@@ -327,6 +355,10 @@ address {
 .service-header {
     height: 58vh;
     /**/
+}
+
+.service-description h1 {
+    font-size: 1.3rem;
 }
 
 .service-description div {
@@ -349,18 +381,18 @@ address {
     border: 1px solid black;
     background: #F4F3F4;
     padding: 2%;
-    margin: 1.5% 0px;
+    margin: 1% 0px;
 }
 
 .service-button {
-    padding: 7px 33px;
+    padding: 0.2rem 1.3rem;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     background: white;
     color: black;
     text-align: center;
     text-decoration: none;
-    font-size: 80%;
+    font-size: 0.8rem;
 }
 
 .service-button:hover {
@@ -386,16 +418,27 @@ address {
     text-indent: 1%;
     list-style-type: square;
     margin: 3%;
-    line-height: 30px;
+    font-size: 0.7rem;
+    line-height: 1rem;
 }
 
 .img-service {
     width: 100%;
-    margin-left: 1%;
+    margin-left: 1.3%;
 }
 
 .services-header-img {
     width: 100%;
+}
+
+.footer {
+    width: 89%;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 5%;
+    font-size: 0.7rem;
 }
 
 
@@ -414,24 +457,33 @@ address {
         padding: 2% 0;
     }
     .links {
-        width: 80%;
+        width: 90%;
+        flex-direction: row;
     }
     .links a {
-        width: 10%;
+        width: 14%;
+        padding: 0% 2% 0% 1%;
     }
     header div {
         display: flex;
         flex-direction: column;
     }
+    .title-header {
+        margin-top: 8%;
+    }
     header .img-header {
         display: none;
     }
     button {
-        width: 80%;
+        margin-top: 10%;
+        width: 70%;
     }
     .line {
         margin-bottom: 3%;
         width: 89%;
+    }
+    h2 {
+        font-size: 0.8rem;
     }
 }
 
