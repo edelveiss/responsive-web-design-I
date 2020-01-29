@@ -241,7 +241,7 @@ p {
 }
 
 header {
-    width: 89%;
+    width: 88%;
     /* height: 78vh; */
 }
 
@@ -250,6 +250,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    width: 90%;
 }
 
 header div {
@@ -263,9 +264,6 @@ header div.img-header {
     vertical-align: middle;
     margin-top: 1%;
 }
-
-
-/* header div.title-header { */
 
 .title-header {
     vertical-align: middle;
@@ -333,17 +331,6 @@ address {
     font-size: 0.7rem;
 }
 
-
-/* .footer div {
-    width: 89%;
-    text-align: center;
-}
-
-.footer p {
-    margin-bottom: 5%;
-    font-size: 0.7rem;
-} */
-
 .line {
     margin: 1%;
     width: 89%;
@@ -353,8 +340,8 @@ address {
 /*  service style sheet  */
 
 .service-header {
-    height: 58vh;
-    /**/
+    height: 45vh;
+    width: 90%;
 }
 
 .service-description h1 {
@@ -423,8 +410,8 @@ address {
 }
 
 .img-service {
-    width: 100%;
-    margin-left: 1.3%;
+    width: 99%;
+    margin-left: 1%;
 }
 
 .services-header-img {
@@ -484,6 +471,10 @@ address {
     }
     h2 {
         font-size: 0.8rem;
+    }
+    .service-header {
+        height: 70vh;
+        /* width: 90%; */
     }
 }
 
