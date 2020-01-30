@@ -212,6 +212,7 @@ p {
     justify-content: space-between;
     align-items: center;
 }
+/* The nav is a little squished - I would probably have it take up 100% width on all screens */
 
 .logo {
     width: 30%;
