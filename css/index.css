@@ -1,3 +1,513 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%; */
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+    max-width: 100%;
+}
+
+p {
+    line-height: 130%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Your code starts here! */
+
+body {
+    margin-left: 5%;
+}
+
+p {
+    font-size: 0.7rem;
+}
+
+
+/* assessability for blind people */
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 89%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* The nav is a little squished - I would probably have it take up 100% width on all screens */
+
+.logo {
+    width: 30%;
+}
+
+.links {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    font-family: "system-ui";
+    letter-spacing: 0.05rem;
+    font-size: 0.8rem;
+    width: 14%;
+    padding-left: 1%;
+    margin: 1.7% 1.2%;
+    text-decoration: none;
+    color: gray;
+}
+
+.links a:hover {
+    color: #B91837;
+}
+
+header {
+    width: 88%;
+    /* height: 78vh; */
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+header div {
+    width: 40%;
+    text-align: center;
+}
+
+header div.img-header {
+    width: 30%;
+    margin-left: 17%;
+    vertical-align: middle;
+    margin-top: 1%;
+}
+
+.title-header {
+    vertical-align: middle;
+    margin-left: 3%;
+    font-size: 2rem;
+}
+
+.title-header h1 {
+    font-size: 1.7rem;
+}
+
+button {
+    width: 45%;
+    font-size: 0.8rem;
+    font-family: 'Titillium Web', sans-serif;
+    border: 0.1rem solid gray;
+    padding: 0.1rem 0.6rem;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #B91837;
+    color: white;
+}
+
+.img-code {
+    width: 89%;
+    margin-left: 1%;
+}
+
+.content1,
+.content2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 89%;
+    margin: 1%;
+}
+
+.content1 div {
+    width: 48.5%;
+}
+
+.content2 div,
+.content1 div {
+    padding-bottom: 2rem;
+}
+
+.content2 div {
+    width: 31.5%;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+.address {
+    width: 89%;
+    margin: 1%;
+    margin-top: 1.6rem;
+}
+
+address {
+    font-size: 0.7rem;
+}
+
+.line {
+    margin: 1%;
+    width: 89%;
+}
+
+
+/*  service style sheet  */
+
+.service-header {
+    height: 45vh;
+    width: 90%;
+}
+
+.service-description h1 {
+    font-size: 1.3rem;
+}
+
+.service-description div {
+    width: 100%;
+    margin: 1%;
+    text-align: left;
+}
+
+.service-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 89%;
+    margin: 1%;
+}
+
+.service-content div {
+    width: 48.5%;
+    border: 1px solid black;
+    background: #F4F3F4;
+    padding: 2%;
+    margin: 1% 0px;
+}
+
+.service-button {
+    padding: 0.2rem 1.3rem;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    background: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.service-button:hover {
+    background-color: #B91837;
+    color: white;
+}
+
+.facts {
+    width: 89%;
+    margin: 1%;
+    margin-top: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.facts div {
+    width: 48.5%;
+}
+
+.facts div ul {
+    padding: 1%;
+    text-indent: 1%;
+    list-style-type: square;
+    margin: 3%;
+    font-size: 0.7rem;
+    line-height: 1rem;
+}
+
+.img-service {
+    width: 99%;
+    margin-left: 1%;
+}
+
+.services-header-img {
+    width: 100%;
+}
+
+.footer {
+    width: 89%;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 5%;
+    font-size: 0.7rem;
+}
+
+
+/********************************/
+
+
+/*media for tablet*/
+
+@media (max-width: 800px) {
+    /*navigation*/
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .logo {
+        padding: 2% 0;
+    }
+    .links {
+        width: 90%;
+        flex-direction: row;
+    }
+    .links a {
+        width: 14%;
+        padding: 0% 2% 0% 1%;
+    }
+    header div {
+        display: flex;
+        flex-direction: column;
+    }
+    .title-header {
+        margin-top: 8%;
+    }
+    header .img-header {
+        display: none;
+    }
+    button {
+        margin-top: 10%;
+        width: 70%;
+    }
+    .line {
+        margin-bottom: 3%;
+        width: 89%;
+    }
+    h2 {
+        font-size: 0.8rem;
+    }
+    .service-header {
+        height: 70vh;
+        /* width: 90%; */
+    }
+}
+
+
+/*media for mobil*/
+
+@media (max-width: 500px) {
+    .links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .links a {
+        width: 10rem;
+        border-bottom: 0.08rem solid grey;
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+    .links a:first-child {
+        border-top: 0.08rem solid grey;
+        padding-top: 0.5rem;
+    }
+    .content2 div,
+    .content1 div,
+    header div,
+    .service-content div,
+    .facts div {
+        width: 100%;
+    }
+    button {
+        width: 50%;
+    }
+    .footer p {
+        margin: 10% 0;
+    }
+}
